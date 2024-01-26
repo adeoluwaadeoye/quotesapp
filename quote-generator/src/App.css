@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background: url(../public/bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Cormorant Upright", serif;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.quote-generator {
+  background-color: #000000;
+  color: ghostwhite;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: .5s ease-in-out;
+}
+
+
+.quote {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.content {
+  letter-spacing: 2px;
+}
+
+button {
+  background-color: #fdbb04;
+  color: #000000;
+  border: none;
+  padding: 20px 30px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(5, 227, 239, 0.677);
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }  
+}

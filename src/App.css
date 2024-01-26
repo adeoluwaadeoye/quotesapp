@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cormorant Upright", sans-serif;
+  height: 100vh;
+  background: url(/public/bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 15rem;
+  height: 3px;
+  background-color: #000;
+  margin: 10px auto;
+}
+
+.wrapper {
+  margin: 1rem;
+  margin-bottom: 10rem;
+}
+
+.quote-text {
+  padding: 0.5rem;
+  font-size: 3rem;
+}
+
+blockquote {
+  position: relative;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  height: 350px;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+button {
+  background-color: gold;
+  padding: 20px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-family: "Cormorant Upright", sans-serif;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+button:hover {
+  background-color: #555;
+  color: cornsilk;
+}
+
+
+.feedback-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 100vh;
+  font-size: 3.5rem;
+  border-radius: 5px;
+  display: inline-block;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+
+footer {
+  background-color: black;
+  color: #fefefe;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: 1rem;
+}
+
+
+/* ------------MEDIA QUERIES (MEDIUM DEVICES)-------------------- */
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .quote-text {
+    font-size: 3rem;
+  }
+
+  button {
+    font-size: 2.5rem;
+  }
+}
+
+
+/* ------------MEDIA QUERIES (SMALL DEVICES)-------------------- */
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  blockquote {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  button {
+    font-size: 2.5rem;
+  }
+
+  .author {
+    font-size: 1.8rem;
+  }
+
+  .quote-text {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ------------MEDIA QUERIES (SMALLER DEVICES)-------------------- */
+@media screen and (max-width: 400px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  blockquote {
+    width: 100%;
+  }
+
+  .quote-text {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  } 
+}
